@@ -11,102 +11,120 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-  <!-- aos library cdn link -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- custom css stylesheet -->
   <link rel="stylesheet" href="assets/css/connect.css">
   <link rel="stylesheet" href="assets/css/aof.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/footer-mobile.css">
+  <link rel="stylesheet" href="assets/css/animate_footer.css">
 </head>
 
 <body>
-  <section class="navigation">
-    <nav class="navbar navbar-light" id="main-nav">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand main-logo" href="home.html"><img src="assets/img/home/Menu/LOGO_.png"></a>
-        <input type="checkbox" id="menustate" class="menu-checkbox">
-        <div class="hamburger-menu">
-          <label class="hamburger-menu__ctrl" for="menustate" id="menulabel">
-            <div class="hamburger-menu__ctrl--button">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </label>
+
+
+  <!-- scroll up button -->
+  <div class="scroll-up hide-btn">
+    <span class="scroll-up-btn">^</span>
+  </div>
+
+
+  <!-- header navbar -->
+  <section class="navbar">
+    <div class="navbar-container">
+      <a href="home.html" class="nav_main_icon">
+        <img src="./assets/img/home/Menu/LOGO_.png" alt="taiba">
+      </a>
+      <div class="nav-btn">
+        <span class="nav_btn_line line-1"></span>
+        <span class="nav_btn_line line-2"></span>
+        <span class="nav_btn_line line-3"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- header navbar expended -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-outer-1">
+        <div class="nav-follow-container">
+          <span>Follow</span>
+          <div class="nav-social-container">
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/LINKEDIN.png" alt="linkedin"></a>
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/TWITTER_.png" alt="twitter"></a>
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/FB_.png" alt="facebook"></a>
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/IG_.png" alt="instagram"></a>
+          </div>
         </div>
-        <div class="menu_content no-scrollbar">
-          <div class="menu_content__items">
-            <div class="row ">
-              <div class="col mx-5">
-                <p style="margin-top: 50px;" class="social">FOLLOW US&nbsp;&nbsp;
-                  <a href="#"><img src="assets/img/home/footer/LINKEDIN.png" alt="" class="social-icons"></a>
-                  <a href="#"><img src="assets/img/home/footer/TWITTER_.png" alt="" class="social-icons"></a>
-                  <a href="#"><img src="assets/img/home/footer/FB_.png" alt="" class="social-icons"></a>
-                  <a href="#"><img src="assets/img/home/footer/IG_.png" alt="" class="social-icons"></a>
-                </p>
-                <ul class="first-section">
-                  <li>
-                    <h6><a href="home.html">WHO WE ARE</a></h6>
-                    <a href="home.html" class="sub-text">Our Story</a>
-
-                    <a href="home.html" class="sub-text">Letter from Our CEO</a>
-
-                    <a href="our-people.html" class="sub-text">Our People</a>
-
-                  </li>
-                  <li>
-                    <h6><a href="whatwedo.html">WHAT WE DO</a></h6>
-                  </li>
-                  <li>
-                    <h6><a href="patient-support.html">PATIENT SUPPORT</a></h6>
-                  </li>
-                  <li>
-                    <h6><a href="aof.html">AREA OF FOCUS</a></h6>
-                    <a href="#raredisease" class="sub-text" id="os-link">Our People</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col mx-3">
-                <ul>
-                  <li>
-                    <h6><a href="partnerships.html">PARTNERSHIPS</a></h6>
-                    <a href="partnerships.html" class="sub-text">Partnering with Taiba</a>
-                    <a href="partnerships.html" class="sub-text">Our Areas of Interest</a>
-                    <a href="partnerships.html" class="sub-text">Partnership forms</a>
-                    <a href="partnerships.html" class="sub-text">Why Partner with Taiba?</a>
-                  </li>
-                  <li>
-                    <h6><a href="news.html">NEWS</a></h6>
-                    <a href="news.html" class="sub-text">Events & Announcements</a>
-                  </li>
-                  <li>
-                    <h6><a href="connect.html">CONNECT</a></h6>
-
-                  </li>
-                </ul>
-              </div>
-              <div class="col mx-3">
-                <a class="navbar-brand main-logo pt-3" href="#"><img src="assets/img/accessrare.png"></a>
-                <img src="assets/img/PATTERN_.png" alt="" class="menu-pattern">
-                <a href="#" class="menu-btn">Visit Taiba HealthCare<img src="assets/img/png/ARROW_.png"> </a>
-              </div>
+        <div class="nav_open_logo">
+          <a href="home.html" class="nav_main_icon"><img src="./assets/img/accessrare.png" alt="taiba"></a>
+          <div class="nav-close-btn">&Cross;</div>
+        </div>
+      </div>
+      <div class="nav-outer-2">
+        <div class="nav-list-1">
+          <div class="nav-item">
+            <a href="home.html" class="nav-link">Who We Are</a>
+            <div class="nav-sub-items">
+              <a href="home.html" class="nav-sub-link">Our Story</a>
+              <a href="home.html" class="nav-sub-link">Letter From Our CEO</a>
+              <a href="our-people.html" class="nav-sub-link">Our People</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="whatwedo.html" class="nav-link">What we do</a>
+          </div>
+          <div class="nav-item">
+            <a href="patient-support.html" class="nav-link">Patient support</a>
+          </div>
+          <div class="nav-item">
+            <a href="aof.html" class="nav-link">Area of focus</a>
+            <div class="nav-sub-items link-hide">
+              <a href="aof.html" class="nav-sub-link">Rare Diseases In The Middle East</a>
             </div>
           </div>
         </div>
+        <div class="nav-list-2">
+          <div class="nav-item">
+            <a href="partnerships.html" class="nav-link">Partnership</a>
+            <div class="nav-sub-items link-hide">
+              <a href="partnerships.html" class="nav-sub-link">Partnering with taiba</a>
+              <a href="partnerships.html" class="nav-sub-link">Our areas of interest</a>
+              <a href="partnerships.html" class="nav-sub-link">Partnership forms</a>
+              <a href="partnerships.html" class="nav-sub-link">Why Partner with Taiba</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="news.html" class="nav-link">News</a>
+            <!-- <div class="nav-sub-items link-hide">
+              <a href="news.html" class="nav-sub-link">Events & Announcements</a>
+            </div> -->
+          </div>
+          <div class="nav-item">
+            <a href="connect.html" class="nav-link">Connect</a>
+          </div>
+        </div>
       </div>
-    </nav>
-  </section>
+      <div class="nav-outer-3">
+        <a href="#" class="visit-btn">Visit Taiba healthcare <span>&rarr;</span></a>
+      </div>
+    </div>
+  </nav>
+
 
   <section class="main">
     <div class="container-fluid p-0 mt-5">
-      <img class="hero-bg" src="./assets/img/aof/header.png" alt="header">
+      <img class="hero-bg sheik-desktop" src="./assets/img/aof/header.png" alt="header">
+      <img class="hero-bg sheik-mobile" src="./assets/img/aof/header-mobile.png" alt="header">
 
+      <!-- aof welcome and points start -->
       <h1 class="heading">Areas of focus</h1>
 
       <section class="therapy">
@@ -114,49 +132,82 @@
           <img src="./assets/img/aof/sec-1.png" alt="icon">
           <h3 class="subheading" style="color: #872087;">OUR THERAPY AREAS</h3>
         </div>
-        <div class="info">
+        <div class="info sheik-desktop">
           <div class="row justify-content-center text-center">
             <div class="col-2"><span>Genetic</span></div>
             <div class="col-2"><span>Metabolic</span></div>
-            <div class="col-2"><span>Precision Medicine</span></div>
-            <div class="col-2"><span>Targeted Medicine</span></div>
+            <div class="col-2"><span>Precision<br>Medicine</span></div>
+            <div class="col-2"><span>Targeted<br>Medicine</span></div>
             <div class="col-2"><span>Genomics</span></div>
           </div>
           <div class="row justify-content-center text-center">
             <div class="col-2"><span>Hematology</span></div>
-            <div class="col-2"><span>Bone Marrow & Stem Cell</span></div>
-            <div class="col-2"><span>Organ Transplantation</span></div>
+            <div class="col-2"><span>Bone Marrow &<br>Stem Cell</span></div>
+            <div class="col-2"><span>Organ<br>Transplantation</span></div>
             <div class="col-2"><span>Nephrology</span></div>
             <div class="col-2"><span>Oncology</span></div>
           </div>
           <div class="row justify-content-center text-center">
             <div class="col-2"><span>Gene Therapy</span></div>
-            <div class="col-2"><span>Orphan Medicines</span></div>
+            <div class="col-2"><span>Orphan<br>Medicines</span></div>
+            <div class="col-2"><span>Immunology</span></div>
+          </div>
+        </div>
+        <div class="info sheik-mobile">
+          <div class="row justify-content-center text-center">
+            <div class="col-2"><span>Genetic</span></div>
+            <div class="col-2"><span>Metabolic</span></div>
+            <div class="col-2"><span>Precision<br>Medicine</span></div>
+            <div class="col-2"><span>Targeted<br>Medicine</span></div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-2"><span>Genomics</span></div>
+            <div class="col-2"><span>Hematology</span></div>
+            <div class="col-2"><span>Bone Marrow &<br>Stem Cell</span></div>
+            <div class="col-2"><span>Organ<br>Transplantation</span></div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-2"><span>Nephrology</span></div>
+            <div class="col-2"><span>Oncology</span></div>
+            <div class="col-2"><span>Gene Therapy</span></div>
+            <div class="col-2"><span>Orphan<br>Medicines</span></div>
+          </div>
+          <div class="row justify-content-center text-center">
+
             <div class="col-2"><span>Immunology</span></div>
           </div>
         </div>
       </section>
+      <!-- aof welcome and points end -->
 
+
+      <!-- rare diseases section start -->
       <section class="rare">
         <div class="row">
-          <div class="col-4" id="raredisease">
+          <div class="col-lg-5 col-12" id="raredisease">
             <h6 class="sub-subheading">AREAS OF FOCUS</h6>
-            <h3 class="subheading text-start">RARE DISEASES <br> IN THE <br> MIDDLE EAST</h3>
+            <h3 class="subheading text-start sheik-desktop">RARE DISEASES IN THE <br> MIDDLE EAST</h3>
+            <h3 class="subheading text-start sheik-mobile">RARE DISEASES IN THE <br> MIDDLE EAST</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita voluptas debitis placeat nam.
               Sequi
               molestias, ipsa tempora id repudiandae assumenda, ipsam harum laboriosam quis cum neque iure vel fugit?
             </p>
           </div>
-          <div class="col-8">
-            <img class="w-100" src="./assets/img/aof/rare.png" alt="rare diseases">
+          <div class="col-lg-7 col-12">
+            <img class="w-100 rare-img" src="./assets/img/aof/rare.png" alt="rare diseases">
           </div>
         </div>
       </section>
+      <!-- rare diseases section end -->
 
+
+      <!-- aof section start -->
       <section class="areas">
         <h3 class="subheading">OUR AREAS OF FOCUS</h3>
+
+        <!-- genetic section start -->
         <section class="genetic">
-          <h3 class="subheading text-start my-5 pleft" style="color: #872087;">GENETIC AND METABOLIC</h3>
+          <h3 class="subheading text-start my-5 pleft" style="color: #872087;">GENETIC & METABOLIC</h3>
           <div class="row m-0">
             <div class="col d-flex flex-column justify-content-center">
               <div class="collapsible-info">
@@ -222,8 +273,11 @@
               <img class="w-100" src="./assets/img/aof/areas-1.png" alt="areas">
             </div>
           </div>
-          <img class="circ-1" src="./assets/img/aof/circ-1.png" alt="bg">
+          <img class="circ-1 animate-bubble" src="./assets/img/aof/circ-1.png" alt="bg">
         </section>
+        <!-- genetic section end -->
+
+        <!-- lungs section start -->
         <section class="lung">
           <h3 class="subheading text-end my-5" style="color: #872087; padding-right: 4rem;">LUNG DISEASES</h3>
           <div class="row m-0">
@@ -259,13 +313,16 @@
               <img class="w-100" src="./assets/img/aof/areas-2.png" alt="areas">
             </div>
           </div>
-          <img src="./assets/img/aof/circ-2.png" alt="bg" class="circ-2">
-          <img src="./assets/img/aof/circ-3.png" alt="bg" class="circ-3">
+          <img src="./assets/img/aof/circ-2.png" alt="bg" class="circ-2 animate-bubble">
+          <img src="./assets/img/aof/circ-3.png" alt="bg" class="circ-3 animate-bubble">
         </section>
+        <!-- lungs section end -->
+
+        <!-- hematology section end -->
         <section class="hematology">
           <h3 class="subheading text-start my-5 pleft" style="color: #872087;">HEMATOLOGY</h3>
           <div class="row m-0">
-            <div class="col d-flex flex-column justify-content-center">
+            <div class="col d-flex flex-column">
               <div class="collapsible-info">
                 <div class="box">
                   <div class="label">THALLASSEMIA</div>
@@ -313,22 +370,28 @@
               <img class="w-100" src="./assets/img/aof/areas-3.png" alt="areas">
             </div>
           </div>
-          <img src="./assets/img/aof/circ-1.png" alt="bg" class="circ-4">
+          <img src="./assets/img/aof/circ-1.png" alt="bg" class="circ-4 animate-bubble">
         </section>
+        <!-- hematology section end -->
       </section>
+
+      <!-- aof section end -->
     </div>
   </section>
+  <!-- main end -->
+
+  <!-- footer section -->
   <section class="footer">
     <div class="container-fluid">
-      <div class="row bg-image mb-0">
-        <div class="row">
+      <div class="row bg-image footer-banner">
+        <div class="col-lg-12">
           <img src="assets/img/healthcarenewlogo.png" alt="" class="healthcarefooter">
-          <!-- <p style="color:#fff;" class="tag-line">integrated healthcare companies<br>founded in 1980 in Muscat,<br>Sultanance of Oman</p> -->
-          <button class="outbtn"><a href="#" class="footer-btn">VISIT WEBSITE</a></button>
+
+          <a href="#" class="footer-btn">Visit Website</a>
         </div>
       </div>
-      <div class="row bg-second mb-0" style="background-image: url('assets/img/home/footer/SOLID\ BG_.png');">
-        <div class="col-lg-8">
+      <div class="row bg-second">
+        <div class="col-lg-9">
           <img src="assets/img/home/footer/TAIBA ACCESS RARE FOOTER LOGO_.png" alt="" class="accessrare">
           <p style="margin-top: 50px;" class="social">FOLLOW US&nbsp;&nbsp;
             <a href="#"><img src="assets/img/home/footer/LINKEDIN.png" alt="" class="social-icons"></a>
@@ -336,88 +399,43 @@
             <a href="#"><img src="assets/img/home/footer/FB_.png" alt="" class="social-icons"></a>
             <a href="#"><img src="assets/img/home/footer/IG_.png" alt="" class="social-icons"></a>
           </p>
-          <p class="copyright sheik-desktop">Copyright &copy;2021</p>
+          <p class="copyright sheik-desktop" style="font-size:10pt;">Copyright &copy;2021</p>
           </ul>
         </div>
-        <div class="col-lg-4">
-          <img src="assets/img/home/footer/LINE_.png" alt="" class="footer-line">
-          <ul class="footer-links">
-            <li>WHO WE ARE</li>
-            <li>PATIENT SUPPORT</li>
-            <li>AREA OF FOCUS</li>
-            <li>WHAT WE DO</li>
-            <li>PARTNERSHIPS</li>
-            <li>NEWS</li>
-            <li>CONNECT</li>
-          </ul>
-
+        <div class="col-lg-3 footer-nav-outer">
+          <div class="footer-nav-container">
+            <img src="assets/img/home/footer/LINE_.png" alt="" class="footer-line">
+            <ul class="footer-links">
+              <li><a href="./home.html">Who we are</a></li>
+              <li><a href="./patient-support.html">Patient support</a></li>
+              <li><a href="./aof.html">Area of Focus</a></li>
+              <li><a href="./whatwedo.html">What we do</a></li>
+              <li><a href="./partnerships.html">Partnership</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./connect.html">Connect</a></li>
+            </ul>
+          </div>
           <p class="copyright sheik-mobile">Copyright &copy;2021</p>
         </div>
       </div>
     </div>
   </section>
 
-  <script>
-    var vid = document.getElementById("myVideo");
-    var flag = 0;
-    window.onload = playVid();
-
-
-    function playVid() {
-      console.log("coming here");
-      var ele = document.querySelector(".hamburger-menu__ctrl--button");
-
-      var flag = 0;
-      ele.onclick = function () {
-
-        var x = document.getElementById("main-nav");
-        x.classList.add('fixed-top');
-        if (flag === 0) {
-          console.log('menu');
-          flag = 1;
-        } else {
-          x.classList.remove('fixed-top');
-          flag = 0;
-          console.log('no-menu')
-        }
-      };
-    };
-
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "READ MORE";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "READ LESS";
-        moreText.style.display = "inline";
-      }
-    };
-  </script>
-
-
   <!-- bootstrap js cdn link-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script>
+    </script>
 
   <!-- jquery cdn link -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
-  <!-- aos library js cdn link -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
   <script src="./assets/js/aof.js"></script>
-  <script src="./assets/js/internal-linking.js"></scriptpartnerships.html
+  <script src="./assets/js/internal-linking.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/scroll-up.js"></script>
+  <script src="./assets/js/animate-footer-banner.js"></script>
 </body>
 
 </html>

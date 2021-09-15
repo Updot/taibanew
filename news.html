@@ -23,87 +23,104 @@
   <!-- custom css stylesheet -->
   <link rel="stylesheet" href="assets/css/connect.css">
   <link rel="stylesheet" href="assets/css/news.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/footer-mobile.css">
+  <link rel="stylesheet" href="assets/css/animate_footer.css">
 </head>
 
 <body>
-  <section class="navigation">
-    <nav class="navbar navbar-light" id="main-nav">
-      <div class="container-fluid px-0">
-        <a class="navbar-brand main-logo" href="home.html"><img src="assets/img/home/Menu/LOGO_.png"></a>
-        <input type="checkbox" id="menustate" class="menu-checkbox">
-        <div class="hamburger-menu">
-          <label class="hamburger-menu__ctrl" for="menustate" id="menulabel">
-            <div class="hamburger-menu__ctrl--button">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </label>
+
+  <!-- scroll up button -->
+  <div class="scroll-up hide-btn">
+    <span class="scroll-up-btn">^</span>
+  </div>
+
+  <!-- header navbar -->
+  <section class="navbar">
+    <div class="navbar-container">
+      <a href="home.html" class="nav_main_icon">
+        <img src="./assets/img/home/Menu/LOGO_.png" alt="taiba">
+      </a>
+      <div class="nav-btn">
+        <span class="nav_btn_line line-1"></span>
+        <span class="nav_btn_line line-2"></span>
+        <span class="nav_btn_line line-3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- navabr expended -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-outer-1">
+        <div class="nav-follow-container">
+          <span>Follow Us</span>
+          <div class="nav-social-container">
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/LINKEDIN.png" alt="linkedin"></a>
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/TWITTER_.png" alt="twitter"></a>
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/FB_.png" alt="facebook"></a>
+            <a href="#" class="nav-social-link"><img src="./assets/img/home/footer/IG_.png" alt="instagram"></a>
+          </div>
         </div>
-        <div class="menu_content no-scrollbar">
-          <div class="menu_content__items">
-            <div class="row ">
-              <div class="col mx-5">
-                <p style="margin-top: 50px;" class="social">FOLLOW US&nbsp;&nbsp;
-                  <a href="#"><img src="assets/img/home/footer/LINKEDIN.png" alt="" class="social-icons"></a>
-                  <a href="#"><img src="assets/img/home/footer/TWITTER_.png" alt="" class="social-icons"></a>
-                  <a href="#"><img src="assets/img/home/footer/FB_.png" alt="" class="social-icons"></a>
-                  <a href="#"><img src="assets/img/home/footer/IG_.png" alt="" class="social-icons"></a>
-                </p>
-                <ul class="first-section">
-                  <li>
-                    <h6><a href="home.html">WHO WE ARE</a></h6>
-                    <a href="home.html" class="sub-text">Our Story</a>
-
-                    <a href="home.html" class="sub-text">Letter from Our CEO</a>
-
-                    <a href="our-people.html" class="sub-text">Our People</a>
-
-                  </li>
-                  <li>
-                    <h6><a href="whatwedo.html">WHAT WE DO</a></h6>
-                  </li>
-                  <li>
-                    <h6><a href="patient-support.html">PATIENT SUPPORT</a></h6>
-                  </li>
-                  <li>
-                    <h6><a href="aof.html">AREA OF FOCUS</a></h6>
-                    <a href="aof.html" class="sub-text">Rare Diseases In The Middle East</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col mx-3">
-                <ul>
-                  <li>
-                    <h6><a href="partnerships.html">PARTNERSHIPS</a></h6>
-                    <a href="partnerships.html" class="sub-text">Partnering with Taiba</a>
-                    <a href="partnerships.html" class="sub-text">Our Areas of Interest</a>
-                    <a href="partnerships.html" class="sub-text">Partnership forms</a>
-                    <a href="partnerships.html" class="sub-text">Why Partner with Taiba?</a>
-                  </li>
-                  <li>
-                    <h6><a href="news.html">NEWS</a></h6>
-                    <a href="#eventsandannouncement"  id="os-link" class="sub-text">Events & Announcements</a>
-                  </li>
-                  <li>
-                    <h6><a href="connect.html">CONNECT</a></h6>
-
-                  </li>
-                </ul>
-              </div>
-              <div class="col mx-3">
-                <a class="navbar-brand main-logo pt-3" href="#"><img src="assets/img/accessrare.png"></a>
-                <img src="assets/img/PATTERN_.png" alt="" class="menu-pattern">
-                <a href="#" class="menu-btn">Visit Taiba HealthCare<img src="assets/img/png/ARROW_.png"> </a>
-              </div>
+        <div class="nav_open_logo">
+          <a href="home.html" class="nav_main_icon"><img src="./assets/img/accessrare.png" alt="taiba"></a>
+          <div class="nav-close-btn">&Cross;</div>
+        </div>
+      </div>
+      <div class="nav-outer-2">
+        <div class="nav-list-1">
+          <div class="nav-item">
+            <a href="home.html" class="nav-link">Who We Are</a>
+            <div class="nav-sub-items">
+              <a href="home.html" class="nav-sub-link">Our Story</a>
+              <a href="home.html" class="nav-sub-link">Letter From Our CEO</a>
+              <a href="our-people.html" class="nav-sub-link">Our People</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="whatwedo.html" class="nav-link">What we do</a>
+          </div>
+          <div class="nav-item">
+            <a href="patient-support.html" class="nav-link">Patient support</a>
+          </div>
+          <div class="nav-item">
+            <a href="aof.html" class="nav-link">Area of focus</a>
+            <div class="nav-sub-items link-hide">
+              <a href="aof.html" class="nav-sub-link">Rare Diseases In The Middle East</a>
             </div>
           </div>
         </div>
+        <div class="nav-list-2">
+          <div class="nav-item">
+            <a href="partnerships.html" class="nav-link">Partnership</a>
+            <div class="nav-sub-items link-hide">
+              <a href="partnerships.html" class="nav-sub-link">Partnering with taiba</a>
+              <a href="partnerships.html" class="nav-sub-link">Our areas of interest</a>
+              <a href="partnerships.html" class="nav-sub-link">Partnership forms</a>
+              <a href="partnerships.html" class="nav-sub-link">Why Partner with Taiba</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="news.html" class="nav-link">News</a>
+            <!-- <div class="nav-sub-items link-hide">
+              <a href="news.html" class="nav-sub-link">Events & Announcements</a>
+            </div> -->
+          </div>
+          <div class="nav-item">
+            <a href="connect.html" class="nav-link">Connect</a>
+          </div>
+        </div>
       </div>
-    </nav>
-  </section>
+      <div class="nav-outer-3">
+        <a href="#" class="visit-btn">Visit Taiba healtcare <span>&rarr;</span></a>
+      </div>
+    </div>
+  </nav>
 
   <section class="main">
+    <!-- news section welcome slider -->
     <div class="container-fluid c-pad mt-5">
       <div class="row top">
         <section id="headerSlider" class="carousel slide" data-bs-ride="carousel">
@@ -118,12 +135,13 @@
               <div class="overlay">
                 <span class="overlay__date">00/06/2020</span>
                 <h1 class="overlay__heading">taiba Middle East FZ LLC announces a commercialization and distribution
-                  agreement with Insmed for ARIKAYCE® in the Countries of GCC (Kingdom of Saudi Arabia, UAE, Kuwait,
-                  Oman,
-                  Qatar, Bahrain).</h1>
-                <a class="overlay__link" href="https://www.aetoswire.com/news/13973/en">Read Full Article</a>
+                  agreement with Insmed for ARIKAYCE® ....</h1>
+                <a class="overlay__link" href="./news-articles/news-article-taiba Middle East FZ LLC.html">Read Full
+                  Article</a>
               </div>
-              <img src="assets/img/news/header-slide-1.png" class="d-block w-100" alt="slider image">
+              <img
+                src="assets/img/news/taiba Middle East FZ LLC  announces a commercialization agreement with Insmed.jpg"
+                class="d-block w-100" alt="slider image">
             </div>
             <div class="carousel-item" data-bs-interval="4000">
               <div class="overlay">
@@ -131,40 +149,51 @@
                 <h1 class="overlay__heading">Alnylam Pharmaceuticals and Taiba Group Partner to Commercialize RNAi
                   Therapeutics in the Gulf States</h1>
                 <a class="overlay__link"
-                  href="https://www.businesswire.com/news/home/20200708005495/en/Alnylam-Pharmaceuticals-and-Ta[…]tner-to-Commercialize-RNAi-Therapeutics-in-the-Gulf-States">Read
+                  href="./news-articles/news-article-Alnylam Pharmaceuticals and Taiba Group.html">Read
                   Full Article</a>
               </div>
-              <img src="assets/img/news/header-slide-1.png" class="d-block w-100" alt="slider image">
+              <img src="assets/img/news/Alnylam Pharmaceuticals.jpg" class="d-block w-100" alt="slider image">
             </div>
             <div class="carousel-item" data-bs-interval="4000">
               <div class="overlay">
                 <span class="overlay__date">00/06/2020</span>
                 <h1 class="overlay__heading">taiba-Elevar Therapeutics cooperation in the Middle East - North Africa
                   region</h1>
-                <a class="overlay__link" href="https://taibahealthcare.com/en/news_events.aspx">Read Full Article</a>
+                <a class="overlay__link" href="./news-articles/news-article-taiba-Elevar-herapeutics.html">Read Full
+                  Article</a>
               </div>
-              <img src="assets/img/news/header-slide-1.png" class="d-block w-100" alt="slider image">
+              <img
+                src="assets/img/news/taiba-Elevar Therapeutics cooperation in the Middle East - North Africa region .jpg"
+                class="d-block w-100" alt="slider image">
             </div>
           </div>
         </section>
       </div>
 
+
       <div class="row articles">
-        <div class="col-7 pe-5 h-100">
+
+        <!-- highlighted article card -->
+        <!-- <div class="col-lg-7 col-12 pe-5 h-100">
           <div class="article-card">
             <img src="assets/img/news/article-1.png" alt="article image">
             <div class="article-card__content">
               <span class="date">05/10/2021</span>
-              <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, soluta.
+              <h5 class="article-title">Lorem ipsum dolor sit amet consectetur <span class="sheik-mobile">adipisicing
+                  elit. Cupiditate, soluta</span>...
               </h5>
               <p class="article-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quo vero
-                dignissimos in reiciendis, perferendis consequatur maiores nemo. Accusamus autem eum beatae illo,
-                repellat eveniet!</p>
+                dignissimos in reiciendis, <span class="sheik-mobile">perferendis consequatur maiores nemo. Accusamus
+                  autem eum beatae illo,
+                  repellat eveniet!</span></p>
               <a href="#">Read Full Article</a>
             </div>
           </div>
-        </div>
-        <div class="col-5 ps-5 h-100">
+        </div> -->
+        <!-- highlighted article card end -->
+
+        <!-- more news section -->
+        <div class="col-lg-12 col-12 ps-5 h-100 more-news">
           <div class="more-articles h-100">
             <div class="article-1">
               <span class="date">06/03/2021</span>
@@ -182,19 +211,29 @@
 
       </div>
 
-      <section class="row bottom" >
-        <div class="col-4 d-flex justify-content-center">
+      <!-- more news section -->
+      <!-- <section class="row bottom"> -->
+        <!-- <div class="col-lg-4 col-6 d-flex justify-content-center">
           <h1>EVENTS &<br>ANNOUN<br>CEMENTS</h1>
-          <div class="carousel-indicators">
+          <div class="carousel-indicators sheik-desktop">
             <button type="button" data-bs-target="#footerSlider" data-bs-slide-to="0" class="active" aria-current="true"
               aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#footerSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#footerSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
-        <div class="col-8">
-          <section id="footerSlider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators carousel-indicators-mobile desk-hide">
+            <button type="button" data-bs-target="#footerSliderMobile" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#footerSliderMobile" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#footerSliderMobile" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-8 col-6"> -->
 
+          <!-- news slider desktop -->
+          <!-- <section id="footerSlider" class="carousel slide mobile-hide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="4000">
                 <div class="container">
@@ -251,23 +290,61 @@
                 </div>
               </div>
             </div>
+          </section> -->
+
+          <!-- news slider mobile -->
+          <!-- <section id="footerSliderMobile" class="carousel slide desk-hide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <div class="container">
+                  <div class="row">
+                    <div class="col footer-article">
+                      <h3>Lorem ipsum dolor sit amet.</h3>
+                      <a href="#">Read Full Article</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="container">
+                  <div class="row">
+                    <div class="col footer-article">
+                      <h3>Lorem ipsum dolor sit amet.</h3>
+                      <a href="#">Read Full Article</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <div class="container">
+                  <div class="row">
+                    <div class="col footer-article">
+                      <h3>Lorem ipsum dolor sit amet.</h3>
+                      <a href="#">Read Full Article</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
-      </section>
+      </section> -->
     </div>
   </section>
 
+
+  <!-- footer section -->
   <section class="footer">
     <div class="container-fluid">
-      <div class="row bg-image mb-0">
-        <div class="row">
+      <div class="row bg-image footer-banner">
+        <div class="col-lg-12">
           <img src="assets/img/healthcarenewlogo.png" alt="" class="healthcarefooter">
-          <!-- <p style="color:#fff;" class="tag-line">integrated healthcare companies<br>founded in 1980 in Muscat,<br>Sultanance of Oman</p> -->
-          <button class="outbtn"><a href="#" class="footer-btn">VISIT WEBSITE</a></button>
+
+          <a href="#" class="footer-btn">Visit Website</a>
         </div>
       </div>
-      <div class="row bg-second mb-0" style="background-image: url('assets/img/home/footer/SOLID\ BG_.png');">
-        <div class="col-lg-8">
+      <div class="row bg-second">
+        <div class=" col-lg-9">
           <img src="assets/img/home/footer/TAIBA ACCESS RARE FOOTER LOGO_.png" alt="" class="accessrare">
           <p style="margin-top: 50px;" class="social">FOLLOW US&nbsp;&nbsp;
             <a href="#"><img src="assets/img/home/footer/LINKEDIN.png" alt="" class="social-icons"></a>
@@ -275,21 +352,22 @@
             <a href="#"><img src="assets/img/home/footer/FB_.png" alt="" class="social-icons"></a>
             <a href="#"><img src="assets/img/home/footer/IG_.png" alt="" class="social-icons"></a>
           </p>
-          <p class="copyright sheik-desktop">Copyright &copy;2021</p>
+          <p class="copyright sheik-desktop" style="font-size:10pt;">Copyright &copy;2021</p>
           </ul>
         </div>
-        <div class="col-lg-4">
-          <img src="assets/img/home/footer/LINE_.png" alt="" class="footer-line">
-          <ul class="footer-links">
-            <li>WHO WE ARE</li>
-            <li>PATIENT SUPPORT</li>
-            <li>AREA OF FOCUS</li>
-            <li>WHAT WE DO</li>
-            <li>PARTNERSHIPS</li>
-            <li>NEWS</li>
-            <li>CONNECT</li>
-          </ul>
-
+        <div class="col-lg-3 footer-nav-outer">
+          <div class="footer-nav-container">
+            <img src="assets/img/home/footer/LINE_.png" alt="" class="footer-line">
+            <ul class="footer-links">
+              <li><a href="./home.html">Who we are</a></li>
+              <li><a href="./patient-support.html">Patient support</a></li>
+              <li><a href="./aof.html">Area of Focus</a></li>
+              <li><a href="./whatwedo.html">What we do</a></li>
+              <li><a href="./partnerships.html">Partnership</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./connect.html">Connect</a></li>
+            </ul>
+          </div>
           <p class="copyright sheik-mobile">Copyright &copy;2021</p>
         </div>
       </div>
@@ -343,7 +421,7 @@
   <!-- bootstrap js cdn link-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script>
+    </script>
 
   <!-- jquery cdn link -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
@@ -364,15 +442,30 @@
     const footerInds = document.querySelectorAll('.bottom>div:first-child .carousel-indicators button');
     let currFooterInd = document.querySelector('.bottom>div:first-child .carousel-indicators button.active');
 
+    const footerIndicatorMobile = document.querySelector('.bottom>div:first-child .carousel-indicators-mobile');
+
+    const footerIndsMobile = document.querySelectorAll('.bottom>div:first-child .carousel-indicators-mobile button');
+    let currFooterIndMobile = document.querySelector('.bottom>div:first-child .carousel-indicators-mobile button.active');
+
     footerInds.forEach(indicator => {
       indicator.addEventListener('click', (e) => {
         currFooterInd.classList.remove('active');
         e.target.classList.add('active');
         currFooterInd = e.target;
+        console.log(currFooterInd);
+      })
+    })
+
+    footerIndsMobile.forEach(indicator => {
+      indicator.addEventListener('click', (e) => {
+        currFooterIndMobile.classList.remove('active');
+        e.target.classList.add('active');
+        currFooterIndMobile = e.target;
       })
     })
 
     const footerSlider = document.querySelector('#footerSlider');
+    const footerSliderMobile = document.querySelector('#footerSliderMobile');
 
     footerSlider.addEventListener('slide.bs.carousel', function (e) {
       console.log(e.from, e.to);
@@ -388,8 +481,26 @@
       nextInd.classList.add('active');
       prevInd.classList.remove('active');
     })
+
+    footerSliderMobile.addEventListener('slide.bs.carousel', function (e) {
+      console.log(e.from, e.to);
+      const prevIndex = e.from + 1;
+      const nextIndex = e.to + 1;
+
+      const prevInd = document
+        .querySelector(`.bottom>div:first-child .carousel-indicators-mobile button:nth-child(${prevIndex})`);
+
+      const nextInd = document
+        .querySelector(`.bottom>div:first-child .carousel-indicators-mobile button:nth-child(${nextIndex})`);
+
+      nextInd.classList.add('active');
+      prevInd.classList.remove('active');
+    })
   </script>
   <script src="./assets/js/internal-linking.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/scroll-up.js"></script>
+  <script src="./assets/js/animate-footer-banner.js"></script>
 </body>
 
 </html>
