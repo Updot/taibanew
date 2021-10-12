@@ -23,7 +23,6 @@ p {
 
 .main .heading {
   color: #872087;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 4rem;
   text-align: center;
@@ -35,7 +34,7 @@ p {
 .main .subheading {
   font-weight: bold;
   font-size: 40pt;
-  color: #99e1fc;
+  color: #3A9EFD;
 }
 
 .main .sub-subheading {
@@ -210,7 +209,7 @@ p {
 .p-form .info span {
   font-weight: 700;
   color: #3b9efc;
-  text-transform: uppercase;
+  
 }
 
 .p-form .col {
