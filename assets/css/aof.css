@@ -1,0 +1,501 @@
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.pleft {
+  padding-left: 4rem;
+}
+
+.hero-bg {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.main .heading {
+  color: #872087;
+  font-weight: bold;
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: -28%;
+  z-index: 2;
+  position: relative;
+}
+.hamburger-menu__ctrl--button {
+  padding-right: 50px !important;
+}
+
+.main .subheading {
+  font-weight: bold;
+  font-size: 29.5pt;
+  color: #3A9EFD;
+  text-align: center;
+}
+p {
+  font-size: 12pt !important;
+  color: #747474;
+  font-weight: 300;
+}
+
+.main .sub-subheading {
+  color: #f995c7;
+  position: relative;
+  font-size: 12.27pt;
+  font-weight: bold;
+}
+
+.therapy,
+.rare,
+.areas {
+  margin: 20rem 4.8rem 0;
+}
+.rare {
+  width: 90vw;
+  margin: 20rem auto;
+}
+.therapy {
+  margin-top: 15rem;
+}
+
+.therapy img {
+  width: 8vw;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.therapy .info {
+  margin-top: 2rem;
+}
+
+.therapy .info .row {
+  margin-bottom: 2rem;
+}
+
+.therapy .info .col-2 span {
+  background-color: #aae2fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15pt;
+  color: #872087;
+  min-height: 70px;
+}
+
+.rare .col-4 {
+  padding-top: 7.5rem;
+  padding-left: 4rem;
+}
+
+.rare .col-8 img {
+  position: relative;
+  right: -6rem;
+}
+
+.therapy {
+  position: relative;
+}
+
+.therapy::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: -50% 0% -20%;
+  background-color: #fbfbfd;
+}
+
+.rare .row {
+  position: relative;
+}
+
+.rare .row::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 5% 0.9% 0%;
+  background-color: #fbfbfd;
+}
+
+.areas > section {
+  position: relative;
+  margin-bottom: 15rem;
+}
+.hematology {
+  margin-bottom: 17rem !important;
+}
+.areas .row {
+  background-color: #fbfbfd;
+}
+
+.areas .col:first-of-type {
+  padding: 4rem;
+}
+
+.areas .subheading:nth-child(2) {
+  padding-left: 4rem;
+}
+
+.areas .box {
+  margin-bottom: 2rem;
+}
+
+.areas .box .label {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #99e1fc;
+  position: relative;
+  cursor: pointer;
+}
+
+.areas .box .label.active {
+  color: #872087;
+}
+
+.areas .box .label.active::after {
+  content: "-";
+}
+
+.areas .box .label.active + .content {
+  max-height: 500px;
+  transition: max-height 1s ease;
+}
+
+.areas .box .label::after {
+  content: "+";
+  position: absolute;
+  right: 15px;
+  font-size: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.areas .box .content {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.areas .box .content p {
+  color: #747474;
+  padding-right: 8rem;
+  font-size: 11pt !important;
+  font-weight: 300;
+}
+
+.circ-1 {
+  position: absolute;
+  z-index: 1;
+  top: 17%;
+  right: -5.5rem;
+  pointer-events: none;
+  width: 694px;
+}
+
+.circ-2 {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  bottom: -13rem;
+  left: -4rem;
+  width: 300px;
+}
+
+.circ-3 {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  width: 200px;
+  left: 5rem;
+  bottom: -11.5rem;
+}
+
+.circ-4 {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  width: 502px;
+  bottom: -7rem;
+  right: -5rem;
+}
+.rare .row {
+  align-items: center;
+}
+
+.animate-bubble {
+  animation-name: move-up;
+  animation-duration: 6s;
+  animation-fill-mode: none;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#raredisease {
+  padding-left: 50px;
+}
+
+.rare-img {
+  transform: translateX(10%);
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .hamburger-menu__ctrl--button {
+    padding-right: 38px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1290px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1390px;
+  }
+}
+@media (min-width: 2000px) {
+  .main .heading {
+    font-size: 100pt;
+  }
+
+  .main .subheading {
+    font-size: 60pt;
+  }
+  .therapy img {
+    width: 10vw;
+  }
+  .therapy .info .col-2 span {
+    font-size: 30pt;
+    min-height: 170px;
+  }
+  .main .sub-subheading {
+    font-size: 24.54pt;
+  }
+  p {
+    font-size: 24pt !important;
+  }
+  .areas .box .label {
+    font-size: 30pt;
+  }
+  .areas .box .content p {
+    font-size: 24pt !important;
+  }
+  .areas .box .label::after {
+    font-size: 5rem;
+  }
+  .circ-1 {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    right: -5.5rem;
+    pointer-events: none;
+    width: 922px;
+  }
+}
+.scroll-up {
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  cursor: pointer;
+  z-index: 99;
+  display: grid;
+  place-content: center;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: #0e74d0;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+}
+
+.scroll-up .scroll-up-btn {
+  color: currentColor;
+  font-size: 16px;
+}
+.hide-btn {
+  opacity: 0;
+  display: none;
+}
+@media (max-width: 820px) {
+  .main .heading {
+    font-size: 25pt;
+    margin-top: -20%;
+  }
+  .therapy,
+  .rare,
+  .areas {
+    width: 90vw;
+    margin: 100px auto 0;
+  }
+  .areas .box .label::after {
+    content: "+";
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .therapy img {
+    width: 25vw;
+  }
+  .main .subheading {
+    font-size: 19pt;
+  }
+  .rare .subheading {
+    text-align: left !important;
+  }
+  .info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .info .row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    column-gap: 10px;
+  }
+  .info .row .col-2 {
+    padding: 0;
+    flex: 0 0 22%;
+  }
+  .therapy .info .col-2 span {
+    font-size: 6pt;
+    min-height: 40px;
+  }
+  .rare .row {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .rare .row .col-12 {
+    padding: 0;
+    margin: 0;
+  }
+  .rare-img {
+    transform: translateX(-8%);
+  }
+  #raredisease {
+    padding: 30px;
+  }
+  .pleft {
+    padding: unset;
+    text-align: center !important;
+  }
+  p {
+    font-size: 8pt !important;
+  }
+  .areas .row {
+    flex-direction: column-reverse;
+  }
+  .areas .row .col {
+    flex: 0 0 100%;
+    padding: 4rem 25px;
+    text-align: left;
+  }
+  .areas .box .label {
+    font-size: 10pt;
+  }
+  .genetic,
+  .lung {
+    margin-bottom: 100px !important;
+  }
+
+  .hematology {
+    margin-bottom: 50px !important;
+  }
+  .genetic .row .col > img,
+  .hematology .row .col > img,
+  .lung .row .col > img {
+    height: 250px !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+  .areas .box .content p {
+    padding: 20px 0;
+    font-size: 8pt !important;
+  }
+  .lung,
+  .subheading {
+    text-align: center !important;
+    padding-right: unset !important;
+  }
+  .lung .row {
+    flex-direction: column;
+  }
+  .circ-1,
+  .circ-2,
+  .circ-3,
+  .circ-4 {
+    display: none;
+  }
+  .sheik-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 820px) {
+  .main .subheading {
+    font-size: 24pt;
+  }
+  p {
+    font-size: 14pt !important;
+  }
+  .therapy .info .col-2 span {
+    font-size: 8pt;
+  }
+  .areas .box .label {
+    font-size: 14pt;
+  }
+  .areas .box .content p {
+    font-size: 14pt !important;
+  }
+  .genetic .row .col > img,
+  .hematology .row .col > img,
+  .lung .row .col > img {
+    height: 450px !important;
+  }
+  .rare .row::after {
+    inset: 10% -5.8% 0%;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1090px) {
+  .info .col-2 {
+    width: 20%;
+  }
+  .therapy .info .col-2 span {
+    font-size: 11pt;
+  }
+  #raredisease {
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+}

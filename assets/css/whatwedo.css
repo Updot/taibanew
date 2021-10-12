@@ -1,0 +1,824 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../FONTS/Poppins-Regular.ttf");
+  /* IE9 Compat Modes */
+  src: url("webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../FONTS/Poppins-Regular.ttf") format("ttf");
+  /* Super Modern Browsers */
+  /* url('webfont.woff') format('woff'), Pretty Modern Browsers
+         url('webfont.ttf')  format('truetype'), Safari, Android, iOS */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.menu-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.hamburger-menu__logo {
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.hamburger-menu__ctrl {
+  margin: 0 0 0 auto;
+}
+
+.hamburger-menu__ctrl--button {
+  background-image: url("../img/home/Menu/Ellipse\ 653.png");
+  background-size: contain;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 20;
+  position: relative;
+}
+
+.hamburger-menu__ctrl--button span {
+  display: block;
+  height: 4px;
+  width: 27px;
+  background-color: #50a4fc;
+  margin: 6px 0px 5px 0px;
+  transition: all 700ms ease-in-out;
+  transform: none;
+  z-index: 10;
+}
+
+.no-scrollbar ::-webkit-scrollbar {
+  display: none;
+}
+
+.menu_content {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background: #a8e2fb;
+  opacity: 0;
+  display: block;
+  margin-top: 0;
+  transition: all 50ms ease-in-out;
+}
+
+.menu_content__items {
+  display: inline-block;
+}
+
+.menu_content__items ul {
+  transform: translateY(15vh);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 83px;
+}
+
+.menu_content__items ul li a {
+  font-size: 1.5rem;
+  font-weight: 520;
+  color: #0e74d0;
+  text-decoration: none;
+  line-height: 4rem;
+  transition: all 200ms linear;
+}
+
+.menu_content__items ul.sub-list li a {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: normal;
+  color: #872087;
+  text-decoration: none;
+  line-height: 2rem;
+}
+
+.menu_content__items ul li a:active,
+.menu_content__items ul li a:hover {
+  color: #0e74d0;
+}
+
+#menustate:checked ~ .hamburger-menu span:nth-of-type(1) {
+  transform: translate(0, 10px) rotate(-45deg);
+  background-color: #872087;
+  position: relative;
+}
+
+#menustate:checked ~ .hamburger-menu span:nth-of-type(2) {
+  transform: rotate(45deg) translateX(0px);
+  background-color: #872087;
+  position: relative;
+}
+
+#menustate:checked ~ .hamburger-menu span:nth-of-type(3) {
+  transition: opacity 350ms linear;
+  opacity: 0;
+}
+
+#menustate:checked ~ .hamburger-menu .hamburger-menu__items {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+#menustate:checked ~ .menu_content {
+  z-index: 1;
+  opacity: 1;
+}
+.mobile-show {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .menu_content {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: #a8e2fb;
+    opacity: 0;
+    display: block;
+    margin-top: 0;
+    transition: all 50ms ease-in-out;
+  }
+  .whatwedo .main-title {
+    margin-left: 2%;
+    margin-top: 15%;
+  }
+  .whatwedo .row {
+    overflow: hidden;
+  }
+  .logistics .row,
+  .regulatory .row,
+  .quality .row,
+  .early-access {
+    background-color: #fbfbfd;
+
+    padding: 22px 5px;
+  }
+
+  .whatwedo video {
+    margin-top: -50px !important;
+    width: 95% !important;
+    transform: translateX(13%);
+  }
+  .who-we-are .container-fluid {
+    overflow: hidden;
+  }
+  .main-title-container {
+    z-index: 9;
+  }
+  .main-title {
+    font-weight: 520;
+    font-size: 2rem;
+  }
+  .whatwedo-big-img {
+    height: auto;
+    width: 100%;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .mobile-show {
+    display: initial;
+  }
+  .whatwedo .row {
+    flex-direction: row;
+  }
+  .commerce .row {
+    flex-direction: column-reverse;
+  }
+  .commerce .second {
+    padding: 0;
+  }
+  .medical-text-container,
+  .commerce-text-container,
+  .pharma-text-container {
+    padding-left: 40px !important;
+    margin-top: 30px;
+  }
+  .medical,
+  .regulatory,
+  .logistics,
+  .commerce,
+  .quality,
+  .pharma,
+  .early-access {
+    margin-bottom: 80px;
+  }
+  .medical .container-fluid,
+  .pharma .container-fluid,
+  .commerc .container-fluide {
+    padding: 0;
+  }
+  .regulatory img,
+  .logistics img,
+  .quality img,
+  .early-access img {
+    height: auto;
+    width: 100%;
+  }
+  .row p {
+    color: #747474;
+    font-size: 8pt !important;
+  }
+  p span {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .row h2 {
+    font-size: 10pt !important;
+  }
+
+  .navbar-brand {
+    width: 50%;
+  }
+
+  .navbar-brand img {
+    width: 100%;
+    padding-left: 29px;
+    margin-top: 21px;
+  }
+
+  .hamburger-menu__ctrl--button {
+    padding-left: 39px;
+    padding-top: 38px;
+    padding-bottom: 35px;
+    padding-right: 34px;
+    margin-top: -16px;
+    background-repeat: no-repeat;
+  }
+
+  .sheik-desktop {
+    display: none;
+  }
+}
+
+p {
+  color: #747474;
+  font-size: 12pt !important;
+  font-weight: 300 !important;
+}
+
+h2 {
+  color: #872087;
+  font-weight: 900;
+  font-size: 16.23pt !important;
+}
+
+#myBtn {
+  text-decoration: none;
+  color: #f1c154;
+  font-size: 12pt !important;
+  font-weight: 300;
+}
+
+#myBtn:hover {
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+@media all and (max-width: 1365px) and (min-width: 1200px) {
+  .main-title {
+    font-size: 3.8rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .sheik-mobile {
+    display: none;
+  }
+
+  .menu-btn {
+    margin-left: 122px;
+    margin-top: -8%;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    background-color: #872087;
+    display: block;
+    position: absolute;
+    color: #fff;
+    padding-left: 34px;
+    border-radius: 0px 0px 0px 89px;
+    font-size: 1rem;
+    padding-right: 51px;
+  }
+
+  .menu-btn img {
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  .menu-pattern {
+    width: 274%;
+    height: 117%;
+    margin-left: -169%;
+    margin-top: -33%;
+  }
+
+  .menu_content__items .first-section {
+    margin-top: -77px;
+  }
+
+  .menu_content__items .social {
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #0e74d0;
+  }
+
+  .menu_content__items .social-icons {
+    margin-right: 5px;
+    width: 5%;
+  }
+
+  .menu_content__items ul li a:hover {
+    color: #fff;
+  }
+
+  .hamburger-menu__ctrl--button {
+    padding-left: 39px;
+    padding-top: 38px;
+    padding-bottom: 35px;
+    padding-right: 40px !important;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+  }
+
+  .main-logo img {
+    width: 47%;
+    margin-left: 65px;
+    margin-top: 37px !important;
+  }
+
+  .sub-text {
+    font-weight: normal !important;
+    color: #872087 !important;
+    font-size: 1.2rem !important;
+    display: block;
+    line-height: 1.5rem !important;
+    margin-left: 15px;
+    border-left: 2px solid white;
+    padding-left: 11px;
+    padding-bottom: 7px;
+  }
+
+  .sub-text:hover {
+    color: #0e74d0 !important;
+  }
+
+  .menu_content__items .first-section {
+    margin-top: -77px;
+  }
+
+  .whatwedo .main-title {
+    margin-left: 10%;
+    margin-top: 35%;
+    font-weight: bold;
+    font-size: 3.3rem;
+  }
+
+  .whatwedo .main-pattern {
+    width: 94%;
+    margin-left: 9px;
+    margin-top: -157px;
+    transform: rotate(38deg);
+  }
+
+  .whatwedo .second {
+    overflow: hidden;
+  }
+
+  .whatwedo .early-access {
+    background-color: #fbfbfd;
+    padding: 115px 60px;
+  }
+
+  .early-access .ea-icon {
+    margin-left: 162px;
+    width: 70%;
+    padding-top: 80px;
+  }
+
+  .early-access h2 {
+    font-size: 1.4rem;
+    /* padding-top: 83px; */
+  }
+
+  .early-access .second {
+    /* margin-bottom: 68px; */
+  }
+
+  .medical {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .medical .medical-img {
+    max-width: 94%;
+  }
+
+  .medical h2 {
+    margin: 25px 0px 25px 0px;
+  }
+
+  .medical-icon {
+    width: 42%;
+    margin-top: 12px;
+  }
+
+  .medical-text {
+    margin-right: 35px;
+  }
+
+  .regulatory .container {
+    background-color: #fbfbfd;
+  }
+
+  .regulatory .second {
+    /* padding-top: 80px; */
+  }
+
+  .regulatory .row {
+    /* padding-bottom: 91px; */
+    background-color: #fbfbfd;
+    padding: 115px 60px;
+  }
+
+  .reg-img {
+    margin-top: 106px;
+    max-width: 69%;
+    margin-left: 89px;
+  }
+
+  .commerce {
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+
+  .commerce h2 {
+    margin: 34px 0px 20px 0px;
+  }
+
+  .commerce .com-icon {
+    width: 36%;
+  }
+
+  .commerce .com-img {
+    max-width: 100%;
+  }
+
+  .commerce .first {
+    padding-right: 60px;
+  }
+
+  .logistics {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .logistics .container {
+    background-color: #fbfbfd;
+  }
+
+  .logistics .log-img {
+    margin-top: 80px;
+    max-width: 69%;
+    margin-left: 81px;
+  }
+
+  .logistics .second {
+    /* padding-top: 80px; */
+  }
+
+  .logistics .row {
+    background-color: #fbfbfd;
+    padding: 115px 60px;
+  }
+
+  .pharma {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .pharma .pharma-img {
+    max-width: 94%;
+  }
+
+  .pharma .pharma-icon {
+    width: 42%;
+    margin-top: 12px;
+  }
+
+  .pharma h2 {
+    margin: 25px 0px 25px 0px;
+  }
+
+  .quality {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .quality .container {
+    background-color: #fbfbfd;
+  }
+
+  .pharma .row,
+  .commerce .row,
+  .medical .row {
+    padding: 115px 60px;
+  }
+
+  .quality .row {
+    background-color: #fbfbfd;
+    padding: 115px 60px;
+  }
+
+  .quality .second {
+    /* padding-top: 80px; */
+  }
+
+  .quality .qual-icon {
+    margin-top: 80px;
+    max-width: 69%;
+    margin-left: 81px;
+  }
+
+  /* .pharma-text {
+      margin-right: 23px
+    } */
+  .footer .social-icons {
+    width: 2%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .footer .bg-image div {
+    margin-bottom: 30px;
+  }
+
+  .footer .bg-image {
+    background-image: url("../img/whatwefoot.png");
+  }
+
+  .footer .col-lg-6 {
+    margin-bottom: 73px;
+  }
+
+  /* .footer {
+      margin-top: 56px;
+    } */
+  .footer .bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .footer .bg-second {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .healthcarefooter {
+    width: 20%;
+    margin-left: 71px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-btn {
+    font-weight: 520;
+    text-decoration: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 80px;
+    padding-right: 85px;
+    margin-left: 80px;
+    background-color: #a8e2fb;
+    color: #872087;
+    border-radius: 0px 34px 0px 34px;
+  }
+
+  .footer .outbtn {
+    background-color: transparent;
+    border: none;
+    margin-top: -89px;
+  }
+
+  .footer-line {
+    height: 70%;
+    /* margin-top: -146px; */
+  }
+
+  .footer .footer-links {
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .footer .footer-links li {
+    list-style: none;
+    font-weight: bold;
+    color: #0e74d0;
+  }
+  .footer .footer-links li a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  .bg-second .col-lg-4 {
+    padding-left: 135px;
+    margin-top: 40px;
+    margin-bottom: 22px;
+  }
+
+  .accessrare {
+    width: 25%;
+    margin-top: 105px;
+    margin-left: 100px;
+  }
+
+  .footer .social {
+    color: #0e74d0;
+    font-size: 13pt !important;
+    font-weight: 520;
+  }
+
+  .footer p {
+    margin-top: 47px;
+    margin-bottom: 40px;
+    margin-left: 104px;
+  }
+
+  .footer-nav-outer {
+    display: grid;
+    place-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  #myBtn {
+    font-size: 15.35pt !important;
+  }
+  .work-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .work-img {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .hamburger-menu {
+    margin-right: -1%;
+  }
+}
+@media (min-width: 2000px) {
+  .whatwedo .main-title {
+    font-size: 85pt;
+  }
+  h2 {
+    font-size: 33pt !important;
+  }
+  p {
+    font-size: 24pt !important;
+  }
+  #myBtn {
+    font-size: 30pt !important;
+  }
+  .medical .medical-img,
+  .commerce .com-img,
+  .pharma .pharma-img {
+    width: 98%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1290px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1390px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .menu-btn {
+    margin-left: 5%;
+  }
+}
+.scroll-up {
+  position: fixed;
+  right: 1%;
+  bottom: 3%;
+  cursor: pointer;
+  z-index: 99;
+  display: grid;
+  place-content: center;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: #0e74d0;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+}
+
+.scroll-up .scroll-up-btn {
+  color: currentColor;
+  font-size: 16px;
+  /* margin-top: 4px; */
+}
+.hide-btn {
+  opacity: 0;
+  display: none;
+}
+.container-new {
+  max-width: 90vw !important;
+  margin: 0 auto;
+}
+.hide {
+  display: none !important;
+}
+@media only screen and (min-width: 820px) and (max-width: 1090px) {
+  .col-lg-3 {
+    /* flex: 0 0 auto; */
+    /* width: 41.6666666667%; */
+    text-align: left !important;
+  }
+
+  .pharma .row,
+  .commerce .row,
+  .medical .row {
+    padding: 115px 60px;
+    height: 100vh;
+  }
+  .col-lg-7,
+  .col-lg-6 {
+    height: 100%;
+  }
+  .medical .medical-img,
+  .commerce .com-img {
+    max-width: 94%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .early-access .ea-icon {
+    margin-left: unset;
+    width: 70%;
+    padding-top: unset;
+  }
+  .quality .qual-icon,
+  .logistics .log-img,
+  .reg-img {
+    margin-top: unset;
+    max-width: 90%;
+    margin-left: unset;
+  }
+  p {
+    font-size: 10pt !important;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 820px) {
+  .main-title {
+    font-size: 3.5rem;
+  }
+  .row h2 {
+    font-size: 16pt !important;
+  }
+  .row p {
+    font-size: 14pt !important;
+  }
+  #myBtn {
+    font-size: 16pt !important;
+  }
+}

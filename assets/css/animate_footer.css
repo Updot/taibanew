@@ -1,0 +1,19 @@
+.footer-banner {
+  opacity: 0;
+}
+.footer-banner-animate {
+  animation: animateFooterBanner 0.4s linear;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes animateFooterBanner {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
