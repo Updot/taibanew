@@ -189,7 +189,7 @@
     position: relative;
   }
   .who-we-are h1 {
-    color: #abe2fb;
+    color: #3a9efd;
     margin-top: 75px;
     margin-bottom: 50px;
     font-weight: bold;
@@ -321,7 +321,7 @@
     margin: 0 auto;
   }
   .what-we-do h1 {
-    color: #872087;
+    color: #3a9efd;
     margin-bottom: 40px;
     font-weight: bold;
     text-align: center;
@@ -376,7 +376,7 @@
     padding-top: 189px;
   }
   .patient-support h1 {
-    color: #abe5fe;
+    color: #3a9efd;
     margin-top: 142px;
     font-weight: bold;
     font-size: 2.2rem !important;
@@ -437,7 +437,7 @@
     background-size: 29%;
   }
   .area-of-focus h1 {
-    color: #abe4fd;
+    color: #3a9efd;
     font-weight: bold;
     padding-bottom: 0px;
     margin-bottom: -55px;
@@ -488,7 +488,7 @@
     min-width: unset !important;
     max-width: unset !important;
     width: 100vw;
-    padding: 69px 0;
+    padding: 69px;
     background-repeat: no-repeat;
     background-size: contain;
     background-size: 110% 110% !important;
@@ -504,7 +504,7 @@
     width: 41%;
   }
   .partnerships .big-text {
-    color: #b2e9fb;
+    color: #3a9efd;
     margin-top: 21px;
     text-align: center;
     margin-bottom: 20px;
@@ -1099,7 +1099,7 @@
     font-size: 12pt;
   }
   .who-we-are h1 {
-    color: #abe2fb;
+    color: #3a9efd;
     margin-left: 120px;
     margin-bottom: 34px;
     font-weight: bold;
@@ -1180,7 +1180,7 @@
     text-align: center;
   }
   .what-we-do h1 {
-    color: #872087;
+    color: #3a9efd;
     font-size: 30pt;
     margin-bottom: 40px;
     font-weight: bold;
@@ -1227,7 +1227,7 @@
     padding-top: 152px;
   }
   .patient-support h1 {
-    color: #abe5fe;
+    color: #3a9efd;
     margin-top: 99px;
     font-weight: bold;
     font-size: 3.3rem !important;
@@ -1306,7 +1306,7 @@
     margin-top: 300px;
   }
   .area-of-focus h1 {
-    color: #abe4fd;
+    color: #3a9efd;
     padding-bottom: 26px;
     font-weight: bold;
     font-size: 3.3rem !important;
@@ -1342,7 +1342,7 @@
     opacity: 0;
   }
   .partnerships .big-text {
-    color: #b2e9fb;
+    color: #3a9efd;
     margin-top: 25px;
     font-weight: 520;
   }
@@ -1353,6 +1353,7 @@
     padding-top: 217px;
     padding-bottom: 6px;
     margin-top: 40px;
+    margin-bottom: 300px;
   }
   .mainImg {
     width: 93% !important;
