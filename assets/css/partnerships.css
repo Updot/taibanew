@@ -27,11 +27,13 @@ p {
 .main .heading {
   color: #872087;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 26px !important;
   text-align: center;
   margin-top: -28%;
   z-index: 2;
   position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .main .subheading {
@@ -533,7 +535,8 @@ p {
     font-size: 1.2rem !important;
   }
   .main .heading {
-    font-size: 30pt !important;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: -17%;
   }
   .ptns-left-text {
