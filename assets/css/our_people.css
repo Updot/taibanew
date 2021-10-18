@@ -7,7 +7,10 @@ body {
 .hero-bg {
   position: relative;
   z-index: 2;
-  width: 102%;
+  width: 90%;
+  margin: 0 auto;
+  height: 70vh;
+  object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -25,19 +28,19 @@ body {
   font-weight: 700;
   font-size: 5rem;
   text-align: center;
-  margin-top: -26%;
+  margin-top: 5rem;
   padding-right: 20px;
   z-index: 3;
   position: relative;
 
-  margin-bottom: 14rem;
+  margin-bottom: 3rem;
 }
 
 .main .subheading {
   font-weight: 600;
   font-size: 2.5rem;
   text-align: center;
-  color: #3A9EFD;
+  color: #3a9efd;
   margin-bottom: 0;
 
   /* margin-top: 5rem; */
