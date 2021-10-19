@@ -211,8 +211,8 @@ body {
     margin: 0 auto;
   }
   .main .heading {
-    margin-bottom: 7.4rem;
-    margin-top: -23%;
+    margin-bottom: 0.4rem;
+    margin-top: 5rem;
   }
 }
 
@@ -308,20 +308,19 @@ body {
   }
 
   .hero-bg {
-    width: 132%;
+    width: 100vw;
+    height: unset;
+    object-fit: contain;
   }
   .main .subheading:nth-child(3) {
     background-color: #fbfbfb;
-    margin: -189px 5vw 0px;
-    padding-top: 30vh;
+    margin: 2rem 5vw 0px;
+    /* padding-top: 30vh; */
     font-weight: bold;
   }
 
   .main .heading {
-    top: 55%;
-    left: 27.7vw;
     font-size: 3.5rem;
-    position: absolute;
   }
   .business-dev {
     padding: 10rem 5vw 3rem;
@@ -440,10 +439,7 @@ body {
     font-size: 14pt !important;
   }
   .main .heading {
-    top: 71%;
-    left: 32%;
     font-size: 6rem;
-    position: absolute;
   }
   .main .subheading:nth-child(3) {
     padding-top: 64px;
