@@ -38,7 +38,6 @@
   }
   p {
     font-size: 8pt !important;
-    color: #7b7b7b !important;
     font-weight: 300;
   }
   .our-story .second p {
@@ -209,7 +208,7 @@
     margin-bottom: 25px;
   }
   .who-we-are p {
-    color: #747474;
+    /* color: #747474; */
     font-size: small;
   }
   .who-we-are h2 {
@@ -393,7 +392,7 @@
     margin-top: 0 !important;
   }
   .patient-support p {
-    color: #747474;
+
     font-size: 7pt !important;
   }
   .patient-support .p-button {
@@ -448,7 +447,7 @@
   }
   .area-of-focus p {
     font-size: 0.7rem;
-    color: #747474;
+
   }
   .area-of-focus {
     margin-top: 220px !important;
@@ -582,7 +581,7 @@
     font-size: 1.2rem !important;
   }
   .news p {
-    color: #747474;
+
   }
   .news .read-article {
     color: #eea827 !important;
@@ -766,7 +765,7 @@
 .event-slide h4 {
   font-weight: bold;
   font-size: 18pt;
-  color: #747474;
+
 }
 .news .slider-nav-container {
   display: flex;
@@ -1095,7 +1094,7 @@
     margin-left: -6%;
   }
   .who-we-are p {
-    color: #747474;
+    /* color: #747474; */
     font-weight: 300;
     font-size: 12pt;
   }
@@ -1234,7 +1233,7 @@
     font-size: 3.3rem !important;
   }
   .patient-support p {
-    color: #747474;
+    /* color: #747474; */
     font-size: 12pt;
     font-weight: 300;
   }
@@ -1327,7 +1326,7 @@
     background-size: 25%;
   }
   .area-of-focus p {
-    color: #747474;
+    /* color: #747474; */
     font-size: 12pt;
     font-weight: 300;
   }
@@ -1387,7 +1386,7 @@
   }
 
   .partnerships .partner-text {
-    color: #747474;
+    /* color: #747474; */
     text-align: center;
     font-size: 12pt;
     width: 50%;
@@ -1403,7 +1402,7 @@
     background-color: #fbfbfb;
   }
   .news p {
-    color: #747474;
+    /* color: #747474; */
   }
   .news .container {
     /* background-color: #fbfbfd; */

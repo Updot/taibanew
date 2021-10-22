@@ -37,7 +37,7 @@ body {
 }
 p {
   font-size: 12pt !important;
-  color: #747474;
+  /* color: #747474; */
   font-weight: 300;
 }
 
@@ -147,7 +147,7 @@ p {
 .areas .box .label {
   font-weight: 700;
   font-size: 1.25rem;
-  color: #99e1fc;
+  color: #3a9efd;
   position: relative;
   cursor: pointer;
 }
@@ -181,7 +181,7 @@ p {
 }
 
 .areas .box .content p {
-  color: #747474;
+  /* color: #747474; */
   padding-right: 8rem;
   font-size: 11pt !important;
   font-weight: 300;

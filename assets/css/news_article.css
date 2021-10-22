@@ -70,7 +70,7 @@ body {
 }
 .sources .source {
   font-size: 15pt !important;
-  color: #747474;
+  /* color: #747474; */
   text-decoration: none;
 }
 .next-post {

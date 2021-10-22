@@ -1,6 +1,6 @@
 const textData = [
   {
-    heading: "access to medicines",
+    heading: "Access to medicines",
     text: [
       "We strive to make our medicines accessible to every patient who needs them.At taiba, we have long-standing experience with Named Patient Sales (NPS) programs in the Middle East.<br> <br> We strive to make our medicines accessible to every patient who needs them. At taiba, we have long-standing experience with Named Patient Sales (NPS) programs in the Middle East.",
     ],
@@ -21,9 +21,9 @@ const textData = [
     logo: "./assets/img/Patient support/Access to medicines/diseasenew.png",
   },
   {
-    heading: "commitment to patients",
+    heading: "Commitment to patients",
     text: [
-      "taiba is a leader in providing innovative medicines for our patients in the Middle East and Africa. We embrace every opportunity to tackle the unmet medical needs of patients. <br> <br>Taiba, with a strong mindset of improving patient experience and quality of life, has been and will continue networking with communities, stakeholders and charities to serve this noble objective.",
+      "taiba is a leader in providing innovative medicines for our patients in the Middle East and Africa. We embrace every opportunity to tackle the unmet medical needs of patients. <br> <br>taiba, with a strong mindset of improving patient experience and quality of life, has been and will continue networking with communities, stakeholders and charities to serve this noble objective.",
     ],
     logo: "./assets/img/Patient support/Access to medicines/customer.png",
   },
@@ -48,7 +48,7 @@ patientSupportInfoContainers.forEach((psc, i) => {
     psc.dataset.supportName = patientSupportHeading.innerText.toLowerCase();
     supportHeadings[i].innerText = patientSupportHeading.innerText;
     supportImgs[i].setAttribute("src", patientSupportIcon.getAttribute("src"));
-    patientSupportHeading.innerText = newTextData[0].heading.toUpperCase();
+    patientSupportHeading.innerText = newTextData[0].heading;
     patientSupportText.innerHTML = newTextData[0].text;
     patientSupportIcon.setAttribute("src", newTextData[0].logo);
   });

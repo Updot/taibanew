@@ -16,7 +16,7 @@ body {
 }
 p {
   font-size: 11pt !important;
-  color: #747474;
+  /* color: #747474; */
   font-weight: 300 !important;
 }
 .pf-para {
@@ -108,7 +108,7 @@ p {
 }
 
 .intro .row p {
-  color: #747474;
+  /* color: #747474; */
   font-size: 11pt !important;
   font-weight: 300;
 }
@@ -179,7 +179,7 @@ p {
 
 .why-partner .row p {
   font-size: 11pt !important;
-  color: #747474;
+  /* color: #747474; */
   font-weight: 300;
   flex-basis: 100%;
 }
@@ -255,7 +255,7 @@ p {
 .map p {
   font-size: 15pt !important;
   font-weight: 300;
-  color: #747474;
+  /* color: #747474; */
   padding: 32rem 0rem 0 13rem;
 }
 

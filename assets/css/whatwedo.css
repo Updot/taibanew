@@ -232,7 +232,7 @@ body {
     width: 100%;
   }
   .row p {
-    color: #747474;
+    /* color: #747474; */
     font-size: 8pt !important;
   }
   p span {
@@ -268,7 +268,7 @@ body {
 }
 
 p {
-  color: #747474;
+  /* color: #747474; */
   font-size: 12pt !important;
   font-weight: 300 !important;
 }

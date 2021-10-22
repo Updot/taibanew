@@ -19,9 +19,14 @@ body {
   margin: 0 1vw;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
-
   background-color: #fbfbfd;
 }
+.team2 {
+  margin: 0 1vw;
+  padding-bottom: 3rem;
+  background-color: #fbfbfd;
+}
+
 
 .main .heading {
   color: #872087;
@@ -57,7 +62,7 @@ body {
 }
 
 .person-card .name {
-  color: #99e1fc;
+  color: #3a9efd;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0;
@@ -207,6 +212,10 @@ body {
 }
 @media screen and (max-width: 1300px) {
   .team {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .team2 {
     width: 90vw;
     margin: 0 auto;
   }
