@@ -3,12 +3,18 @@ const defaultLocation = document.querySelector(".default-location");
 const addressDiv = document.querySelectorAll(".map1 .address");
 const addresses = document.querySelectorAll(".address");
 const defaultAddress = document.querySelector(".default-address");
-console.log(window.outerWidth);
+const partnerForm = document.getElementById("partner-form");
+const joinForm = document.getElementById("join-form");
+const responsePartnerEl = document.getElementById("response-partner");
+const responsePartnerBlock = document.getElementById("response-response-block");
+const responseJoinEl = document.getElementById("response-join");
+const responseJoinBlock = document.getElementById("response-join-block");
+// console.log(window.outerWidth);
 // if (window.outerWidth < 500) {
 //   const addressDesk = document.querySelector(".default-address-desktop");
 //   addressDesk.parentNode.removeChild(addressDesk);
 // }
-addresses.forEach((address) => console.log(address.dataset.locationName));
+// addresses.forEach((address) => console.log(address.dataset.locationName));
 
 locations.forEach((location, i) => {
   location.addEventListener("click", (e) => {
@@ -47,6 +53,10 @@ locations.forEach((location, i) => {
   closePopup.forEach((cp) => {
     cp.addEventListener("click", (e) => {
       e.preventDefault();
+      partnerForm.classList.remove("d-none");
+      joinForm.classList.remove("d-none");
+      responsePartnerEl.classList.add("d-none");
+      responseJoinEl.classList.add("d-none");
       popup.classList.add("popup-hidden");
       partnerPopup.classList.add("popup-hidden");
       joinPopup.classList.add("popup-hidden");
@@ -55,3 +65,47 @@ locations.forEach((location, i) => {
     });
   });
 });
+if (partnerForm) {
+  async function partnerHandleSubmit(event) {
+    event.preventDefault();
+    var data = new FormData(event.target);
+    const response = await fetch(event.target.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+    responsePartnerEl.classList.remove("d-none");
+    event.target.classList.add("d-none");
+    if (response.ok) {
+      responsePartnerBlock.innerText = "Thanks for your submission!";
+      event.target.reset();
+    } else {
+      responsePartnerBlock.innerText =
+        "Oops! There was a problem submitting your form";
+    }
+  }
+  async function joinHandleSubmit(event) {
+    event.preventDefault();
+    var data = new FormData(event.target);
+    const response = await fetch(event.target.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+    responseJoinEl.classList.remove("d-none");
+    event.target.classList.add("d-none");
+    if (response.ok) {
+      responseJoinBlock.innerText = "Thanks for your submission!";
+      event.target.reset();
+    } else {
+      responseJoinBlock.innerText =
+        "Oops! There was a problem submitting your form";
+    }
+  }
+  partnerForm.addEventListener("submit", partnerHandleSubmit);
+  joinForm.addEventListener("submit", joinHandleSubmit);
+}

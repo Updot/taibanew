@@ -285,7 +285,7 @@ p {
 .big-text {
   font-size: 50pt !important;
   font-weight: 900;
-  color: #3A9EFD;
+  color: #3a9efd;
 }
 .big-text img {
   height: auto;
@@ -705,6 +705,16 @@ p {
 .hide-btn {
   opacity: 0;
   display: none;
+}
+.response {
+  height: 50%;
+  display: grid;
+  place-content: center;
+}
+.response p {
+  font-size: 1.4rem !important;
+  font-weight: 600;
+  color: #fff;
 }
 @media (max-width: 820px) {
   body {
