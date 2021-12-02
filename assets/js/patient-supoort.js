@@ -1,6 +1,6 @@
 const textData = [
   {
-    heading: "Access to medicines",
+    heading: "Access to medicine",
     text: [
       "We strive to make our medicines accessible to every patient who needs them.At taiba, we have long-standing experience with Named Patient Sales (NPS) programs in the Middle East.<br> <br> We strive to make our medicines accessible to every patient who needs them. At taiba, we have long-standing experience with Named Patient Sales (NPS) programs in the Middle East.",
     ],
@@ -39,13 +39,14 @@ const patientSupportIcon = document.querySelector(".patient-support-icon");
 const patientSupportText = document.querySelector(".patient-support-text");
 const supportHeadings = document.querySelectorAll(".support-heading");
 const supportImgs = document.querySelectorAll(".support-img");
+
 patientSupportInfoContainers.forEach((psc, i) => {
   psc.addEventListener("click", (e) => {
-    const name = e.target.dataset.supportName;
+    const name = e.target.childNodes[3].innerText.toLowerCase();
     const newTextData = textData.filter((data) => {
       return data.heading.toLowerCase() === name;
     });
-    psc.dataset.supportName = patientSupportHeading.innerText.toLowerCase();
+
     supportHeadings[i].innerText = patientSupportHeading.innerText;
     supportImgs[i].setAttribute("src", patientSupportIcon.getAttribute("src"));
     patientSupportHeading.innerText = newTextData[0].heading;
